@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fluff Stuff</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css?family=Poller+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap" rel="stylesheet">
+</head>
+
+
+
+
+<body>
+
+  <!-- Page header -->
+  <header class="navbar">
+    <div class="navbar-content">
+      <a href=./home.html>
+        <span id='logo'> FLUFF STUFF</span>
+      </a>
+
+      <div class="navbar-grid">
+        <div><a href='./detail.html'>Couch Pillow</a></div>
+        <div><a href='./detail.html'>Bed Pillow</a></div>
+        <div><a href='./detail.html'>Round Pillow</a></div>
+        <div><a href='./detail.html'>Floor Pillow</a></div>
+      </div>
+
+      <div class="icons-grid">
+        <img class="icons" alt="shopping cart" src="./Asset/IndexAsset/icon_cart.png">
+        <img class="icons" alt="personal info" src="./Asset/IndexAsset/icon_person.png">
+      </div>
+    </div>
+  </header>
+
+  <section class='main-body'>
+
+      <!-- Back Button -->
+    <a href='./item_page.html' id="back"> Back</a>
+
+
+    <!-- Detail Flex Container -->
+    <div class='detail-container'>
+      <!-- Image View Flex column container -->
+      <div class='images-container'>
+        <div class='top-image'>
+          <img id='image-main' alt="Room Image Main" src='./Asset/detailAsset/image_1.png'>
+        </div>
+        <div class='image-small-pre'>
+          <img class='preview' alt="Room Image 1" src='./Asset/detailAsset/image_2.png'>
+          <img class='preview' alt="Room Image 2" src='./Asset/detailAsset/image_3.png'>
+          <img class='preview' alt="Room Image 3" src='./Asset/detailAsset/image_4.png'>
+          <img class='preview' alt="Arrow Button" src='./Asset/detailAsset/arrow.png'>
+        </div>
+      </div>
+
+      <!-- Right Side Flex column container -->
+      <div class="description">
+        <p id="des-title">BED PILLOW</p>
+        <ul id="des-text">
+          <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dictum tristique sit augue ullamcorper. Ullamcorper placerat tellus condimentum adipiscing aenean. </li>
+          <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dictum tristique sit augue ullamcorper. Ullamcorper placerat tellus condimentum adipiscing aenean. </li>
+          <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dictum tristique sit augue ullamcorper. Ullamcorper placerat tellus condimentum adipiscing aenean. </li>
+        </ul>
+        <p class="des-subheading">Color:</p>
+        <!-- Color Choices -->
+        <div class="des-color-assortment">
+          <div class='des-color-item'>
+            <div id="color-1"></div>
+            <h4>After School Special</h4>
+          </div>
+          <div class='des-color-item'>
+            <div id="color-2"></div>
+            <h4>Morning Haze</h4>
+          </div>
+          <div class='des-color-item'>
+            <div id="color-3"></div>
+            <h4>Cozy Denim</h4>
+          </div>
+          <div class='des-color-item'>
+            <div id="color-4"></div>
+            <h4>Rainy Day</h4>
+          </div>
+        </div>
+        <p class="des-subheading">Material:</p>
+        <!-- Material Choices -->
+        <div class="des-material-assortment">
+          <div class='des-color-item'>
+            <img class='img-preview' alt="Room Image 1" src="./Asset/detailAsset/material_1.png">
+            <h4>Duck Down</h4>
+          </div>
+          <div class='des-color-item'>
+            <img class='img-preview' alt="Room Image 2" src="./Asset/detailAsset/material_2.png">
+            <h4>Poly-Blend</h4>
+          </div>
+          <div class='des-color-item'>
+            <img class='img-preview' alt="Room Image 3" src="./Asset/detailAsset/material_3.png">
+            <h4>Memory Foam</h4>
+          </div>
+        </div>
+
+        <p class="des-subheading">Price: 99.99$</p>
+        <div></div>
+
+        <button id="add-to-cart"> Add to Cart</button>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Emd Banner -->
+
+  <section class="end-banner">
+    <div class="banner-contents-column">
+      <div class="column">
+        <span id='logo-white'> FLUFF STUFF</span>
+        <div class="icons-grid" id='icon_white'>
+          <img class="icons" alt="facebook link icon" src="./Asset/IndexAsset/icons_facebook.png">
+          <img class="icons" alt="instagram link icon" src="./Asset/IndexAsset/icons_instagram.png">
+          <img class="icons" alt="pinterest link icon" src="./Asset/IndexAsset/icons_pinterest.png">
+          <img class="icons" alt="twitter link icon" src="./Asset/IndexAsset/icons_twitter.png">
+        </div>
+        <div class="searchbar">
+          <input type="text" placeholder="Get email updates">
+          <button type="submit">Sign-up</button>
+        </div>
+      </div>
+      <div class="column">
+        <div class='body-white' id='title'>SHOP</div>
+        <div><a href='./detail.html' class='body-white'>Couch Pillow</a></div>
+        <div><a href='./detail.html' class='body-white'>Bed Pillow</a></div>
+        <div><a href='./detail.html' class='body-white'>Round Pillow</a></div>
+        <div><a href='./detail.html' class='body-white'>Floor Pillow</a></div>
+      </div>
+    </div>
+  </section>
+
+</body>
