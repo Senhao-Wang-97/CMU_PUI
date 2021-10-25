@@ -1,3 +1,4 @@
+//Code for shoppingcart selection
 var count = 0;
 
 updateCounter();
@@ -13,6 +14,8 @@ function updateCounter(){
 }
 
 
+
+//Code for color selection
 var colorChoice = document.getElementsByClassName("color-select");
 
 var myFunction = function() {
@@ -28,6 +31,8 @@ for (var i = 0; i < colorChoice.length; i++) {
 };
 
 
+
+//Code for selecting the materials
 var textureChoice = document.getElementsByClassName("img-preview");
 
 var myFunction = function() {

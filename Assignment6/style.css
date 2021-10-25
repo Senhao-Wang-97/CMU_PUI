@@ -12,11 +12,34 @@ a:link, a:visited {
 a:hover {
   color : #9D9D9D;
 }
+a{
+  margin:auto;
+}
 .navbar {
   top : 0;
   z-index : 10;
   box-shadow : 0 20px 64px -21px rgb(0, 0, 0, 0.25);
 }
+
+h5 {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  color: #000000;
+  margin-top: 0px;
+}
+h6 {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 25px;
+
+
+  color: #000000;
+}
+
 .navbar-content {
   display : flex;
   flex-direction : row;
@@ -213,10 +236,94 @@ background-color : #29182A;
   color : #281528;
 }
 
+.shoppingcart{
+  display: flex;
+  flex-direction: row;
+  width: 1180px;
+  margin: auto;
+}
 
-.color-select{
+
+.check-out-container{
+  display: flex;
+  flex-direction: column;
+  width: 278px;
+}
+
+.item-detail{
+  display: flex;
+  flex-direction: row;
+  margin-right: 20px;
+  margin-top: 100px;
+  box-shadow: 0 -1px 0 #C5C5C5;
+  padding-top: 40px;
+}
+
+.item-detail-preview{
+  width: 180px;
+  height: 180px;
+}
+
+
+.des-subheading2 {
+  font-family : "Open Sans";
+  font-style : normal;
+  font-weight : 300;
+  font-size : 18px;
+  margin: 0px;
+  text-align: left;
+}
+
+.pillows-checkout-container {
+  display: flex;
+  flex-direction: column;
+  width: 876px;
+  margin-right: 20px;
+  padding: 0px;
+}
+
+.checkout-title{
+  width: 680px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.delete-icon{
+  width:20px;
+  height: 20px;
+  padding-right: 35px;
+}
+
+
+.check-out-detail-right{
+
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 0px;
+}
+
+.checkout-bottom{
+  display:flex;
+  flex-direction: row;
 
 }
+.checkout-bottom div{
+  width: 280px;
+  margin-right: 20px;
+}
+
+.summary-tab{
+  margin-top: 100px;
+  width: 280px;
+}
+
+.summary-line{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+
 
 #color-1 {
   background : #A2576A;
@@ -378,4 +485,35 @@ h4 {
 
 #num-in-cart{
   margin-right: 20px;
+}
+
+#main-headline-shopping {
+  font-family : "Open Sans";
+  font-style : normal;
+  font-weight : 800;
+  font-size : 56px;
+  line-height : 76px;
+  letter-spacing : 0.05em;
+  padding : 20px;
+
+  color : #452946;
+  margin:auto;
+  text-align: center;
+  margin-top : 50px;
+}
+
+#checkout1 {
+  background-color : white;
+  border : none;
+  margin-top : 30px;
+  color : black;
+  text-align : center;
+  text-decoration : none;
+  display : inline-block;
+  font-size : 25px;
+  border-radius : 50px;
+  height : 40px;
+  width : 180px;
+  border : #E5E5E5 solid 3px;
+  cursor:pointer;
 }
