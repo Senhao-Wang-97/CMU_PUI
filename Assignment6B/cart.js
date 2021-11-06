@@ -30,6 +30,7 @@ for (var i = 0; i < cart.length; ++i){
   add_minus_listener()
 }
 
+//Listener for removing icon.
 function add_delete_listener(){
   var removeCartItemButtons = document.getElementsByClassName("delete-icon")
   for (var i = 0; i < removeCartItemButtons.length; i++){
@@ -39,12 +40,14 @@ function add_delete_listener(){
   };
 }
 
+//Delete the row items.
 function delete_row(event){
   var buttonClicked = event.target
   buttonClicked.parentElement.parentElement.parentElement.remove()
   updateStorageOnDelete(buttonClicked.id)
 }
 
+//Update storage when item is deleted, and store to local storage.
 function updateStorageOnDelete(delete_id){
   console.log(delete_id)
   index_to_delete = delete_id.split('_')[1];
@@ -60,6 +63,7 @@ function updateStorageOnDelete(delete_id){
   updateCounter()
 }
 
+//Display method for adding item.
 function addItemToCart(color,fill,num,id){
   var cartRow = document.createElement('div');
   cartRow.classList.add('item-detail');
@@ -90,13 +94,13 @@ function addItemToCart(color,fill,num,id){
   cartItems.append(cartRow)
 }
 
-
+//Sync item to backend.
 function storetoLocal(){
   var dataString = JSON.stringify(cart)
   localStorage.setItem("cart", dataString)
 }
 
-
+//Clean up data, and merge items with same prperties.
 function sortStorage(){
   for (var i = 0; i < cart.length; i++){
     for (var k = i+1; k < cart.length; k++){
@@ -124,7 +128,7 @@ function updateCounter(){
   document.getElementById('num-in-cart').innerHTML = total;
 }
 
-
+//+ icon listener.
 function add_add_listener(){
   var addItemButtons = document.getElementsByClassName("add-item")
   for (var i = 0; i < addItemButtons.length; i++){
@@ -149,6 +153,7 @@ function add_item(event){
   updateSmallText(index_to_change, quant)
 }
 
+//Minus icon listener.
 function add_minus_listener(){
   var minusItemButtons = document.getElementsByClassName("minus-item")
   for (var i = 0; i < minusItemButtons.length; i++){
@@ -157,6 +162,7 @@ function add_minus_listener(){
     button.addEventListener('click', minus_item)
   }
 }
+
 
 function minus_item(event){
   var buttonClicked = event.target

@@ -8,6 +8,7 @@ if (localStorage.getItem("cart")){
 var current_color = '';
 var current_fill = '';
 
+//Look up table
 var dict = {
   'color-1': "After School Special",
   'color-2': "Morning Haze",
@@ -20,19 +21,20 @@ var dict = {
 
 updateCounter();
 
+//Add item to shopping cart
 function add_item(){
   cart.push({type: "Bed Pillow", color: current_color, fill: current_fill, num: 1});
   storetoLocal()
   updateCounter();
 }
 
-
+//Store data to local storage.
 function storetoLocal(){
   var dataString = JSON.stringify(cart)
-  console.log(dataString)
   localStorage.setItem("cart", dataString)
 }
 
+//Update the counter next to shopping cart icon.
 function updateCounter(){
   var total = 0
   for (var i = 0; i < cart.length; i++){
