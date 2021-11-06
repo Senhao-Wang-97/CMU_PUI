@@ -14,20 +14,26 @@
 </head>
 
 <body>
+
   <!-- Page header -->
   <header class="navbar">
     <div class="navbar-content">
       <a href=./index.html>
         <span id='logo'> FLUFF STUFF</span>
       </a>
+
       <div class="navbar-grid">
         <div><a href='./detail.html'>Couch Pillow</a></div>
         <div><a href='./detail.html'>Bed Pillow</a></div>
         <div><a href='./detail.html'>Round Pillow</a></div>
         <div><a href='./detail.html'>Floor Pillow</a></div>
       </div>
+
       <div class="icons-grid">
-        <img class="icons" alt="shopping cart" src="./Asset/IndexAsset/icon_cart.png">
+        <a href='./shopping_cart.html'>
+          <img class="icons" alt="shopping cart" src="./Asset/IndexAsset/icon_cart.png">
+        </a>
+        <p id="num-in-cart"></p>
         <img class="icons" alt="personal info" src="./Asset/IndexAsset/icon_person.png">
       </div>
     </div>
@@ -40,89 +46,26 @@
 
     <div class="pillows-checkout-container">
 
-      <!--item detail1-->
-      <div class="item-detail">
-        <img src='./Asset/checkout_asset/pillow_1.png' class="item-detail-preview" alt="Bed Pillow">
-        <div class="check-out-detail-right">
-          <div class="checkout-title">
-            <h5>Bed Pillow</h5>
-            <img src='./Asset/checkout_asset/delete.png' class="delete-icon" alt='delete icon'>
-          </div>
-          <div class="checkout-bottom">
-            <div>
-              <p class="des-subheading2">Material: Memory Foam</p>
-              <p class="des-subheading2">Color: After School Special</p>
-            </div>
-            <div>
-              <p class="des-subheading2">$99.99</p>
-              <p class="des-subheading2">Quantity: 1</p>
-            </div>
-          </div>
-        </div>
     </div>
-
-    <!--item detail 2-->
-    <div class="item-detail">
-      <img src='./Asset/checkout_asset/pillow_2.png' class="item-detail-preview" alt="Bed Pillow">
-      <div class="check-out-detail-right">
-        <div class="checkout-title">
-          <h5>Bed Pillow</h5>
-          <img src='./Asset/checkout_asset/delete.png' class="delete-icon" alt='delete icon'>
+    <div class="summary-tab">
+      <div class="summary-text">
+        <h5>Summary</h5>
+        <div class="summary-line">
+          <p class="des-subheading2">Subtotal</p>
+          <p class="des-subheading2">$299.97</p>
         </div>
-        <div class="checkout-bottom">
-          <div>
-            <p class="des-subheading2">Material: Memory Foam</p>
-            <p class="des-subheading2">Color: After School Special</p>
-          </div>
-          <div>
-            <p class="des-subheading2">$99.99</p>
-            <p class="des-subheading2">Quantity: 1</p>
-          </div>
+        <div class="summary-line">
+          <p class="des-subheading2">Tax</p>
+          <p class="des-subheading2"> $28.93</p>
         </div>
+        <p></p>
+        <div class="summary-line">
+          <p class="des-subheading2">Total</p>
+          <p class="des-subheading2"> $328.9</p>
+        </div>
+        <button id='checkout1'>Check-out</button>
       </div>
     </div>
-
-    <!--item detail 3-->
-    <div class="item-detail">
-      <img src='./Asset/checkout_asset/pillow_3.png' class="item-detail-preview" alt="Bed Pillow">
-      <div class="check-out-detail-right">
-        <div class="checkout-title">
-          <h5>Bed Pillow</h5>
-          <img src='./Asset/checkout_asset/delete.png' class="delete-icon" alt='delete icon'>
-        </div>
-        <div class="checkout-bottom">
-          <div>
-            <p class="des-subheading2">Material: Memory Foam</p>
-            <p class="des-subheading2">Color: After School Special</p>
-          </div>
-          <div>
-            <p class="des-subheading2">$99.99</p>
-            <p class="des-subheading2">Quantity: 1</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="summary-tab">
-    <div class="summary-text">
-      <h5>Summary</h5>
-      <div class="summary-line">
-        <p class="des-subheading2">Subtotal</p>
-        <p class="des-subheading2">$299.97</p>
-      </div>
-      <div class="summary-line">
-        <p class="des-subheading2">Tax</p>
-        <p class="des-subheading2"> $28.93</p>
-      </div>
-      <p></p>
-      <div class="summary-line">
-        <p class="des-subheading2">Total</p>
-        <p class="des-subheading2"> $328.9</p>
-      </div>
-      <button id='checkout1'>Check-out</button>
-    </div>
-  </div>
-
 
   </section>
 
@@ -151,12 +94,5 @@
       </div>
     </div>
   </section>
-
-  <!-- Load React. -->
-  <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
-  <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
-  <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
-
-  <!-- Load our React component. -->
-  <script src="like_button.js"></script>
+  <script type="text/javascript" src="cart.js"></script>
 </body>

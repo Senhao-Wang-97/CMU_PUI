@@ -324,6 +324,12 @@ background-color : #29182A;
 
 }
 
+.num-item{
+  display:flex;
+  flex-direction: row;
+
+}
+
 
 #color-1 {
   background : #A2576A;
@@ -516,4 +522,18 @@ h4 {
   width : 180px;
   border : #E5E5E5 solid 3px;
   cursor:pointer;
+}
+
+.add-item{
+  margin: auto;
+  margin-right: 0px;
+  margin-left: 20px;
+
+}
+
+
+.minus-item{
+  margin: auto;
+  margin-left: 0px;
+
 }
